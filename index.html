@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            column-gap: 35px;
+            row-gap: 40px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-container {
+            max-width: 980px;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .grid-container>div {
+            background-color: blue;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform .2s;
+        }
+
+        .grid-container>div:hover {
+            transform: scale(1.2);
+        }
+
+        .grid-container div p {
+            background-color: rgb(229, 230, 233);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 5px;
+            margin: 0;
+        }
+
+        @media screen and (max-width:420px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .grid-container>div:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        @media screen and (min-width:421px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+        }
+
+        @media screen and (min-width:769px) {
+            .grid-container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media screen and (min-width:1921px) {
+            .grid-container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .main-container {
+                max-width: 1800px;
+                width: 90%;
+            }
+            .grid-container>div:hover {
+                transform: scale(1.08);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="grid-container">
+
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+            <div>
+                <img src="./placeholder-image.png" alt="Loading image...">
+                <p>Image title</p>
+            </div>
+
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque optio asperiores adipisci debitis aperiam ipsa
+            fuga, minus vero fugiat unde cupiditate ratione eligendi eaque molestiae nam quo dolorem rerum ab voluptatum
+            vitae dolor. Molestias, tempora id voluptatibus tempore, iure in, nulla modi eius aliquid quam ut? Nesciunt
+            ex ad cupiditate facere! Sequi magni aut fugit temporibus facere ex deserunt, accusantium natus quae
+            doloribus illum nulla pariatur nemo ratione ullam recusandae consectetur tenetur. Voluptatem optio vel at
+            eos dolore! Perferendis, nam atque nesciunt porro incidunt error exercitationem maiores maxime minus modi
+            consequuntur vitae? Tempora corrupti debitis magni laudantium in dolore reprehenderit.</p>
+    </div>
+
+
+
+</body>
+
+</html>
